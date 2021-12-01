@@ -3,7 +3,7 @@ from math import log2, ceil
 
 s = input()
 
-# generate alphabet (0x61 - a, 0x7b - z)
+# generate alphabet (0x61 - a, 0x7a - z)
 alphabet = {chr(i): bin(i - 0x61)[2:].zfill(5) for i in range(0x61, 0x7b)}
 
 data = ''.join(alphabet[item] for item in s)
